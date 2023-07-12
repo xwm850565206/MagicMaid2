@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "magic_maid2:blocks/grass_bottom"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north": {
+      "y": 0,
+      "model": "magic_maid2:candle_stick"
+    },
+    "facing=south": {
+      "y": 180,
+      "model": "magic_maid2:candle_stick"
+    },
+    "facing=east": {
+      "y": 90,
+      "model": "magic_maid2:candle_stick"
+    },
+    "facing=west": {
+      "y": 270,
+      "model": "magic_maid2:candle_stick"
+    },
+    "facing=up": {
+      "y": 0,
+      "model": "magic_maid2:candle_stick"
+    },
+    "facing=down": {
+      "y": 0,
+      "model": "magic_maid2:candle_stick"
+    }
+  }
+}

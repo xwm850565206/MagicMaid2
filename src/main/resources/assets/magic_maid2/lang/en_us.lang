@@ -1,0 +1,107 @@
+item.unreal_ring.name=unreal_ring
+item.unreal_ball.name=unreal_ball
+item.fox_armor.name=fox_armor
+item.dark_claw.name=dark_claw
+item.dark_soul.name=dark_soul
+item.banshee_veil.name=banshee_veil
+item.star_arrow.name=star_arrow
+item.heaven_arrow.name=heaven_arrow
+item.star_bow.name=star_bow
+item.eager.name=eager
+item.ximo_core.name=desire_core
+item.evil_helmet.name=evil_helmet
+item.evil_chestplate.name=evil_chestplate
+item.evil_leggings.name=evil_leggings
+item.evil_boots.name=evil_boots
+item.evil_ghost_obsession_sword.name=evil_ghost_obsession_sword
+item.evil_pickaxe.name=evil_pickaxe
+
+item.memory_aili_piece.name=memory_aili_piece
+item.memory_carlie_piece.name=memory_carlie_piece
+item.memory_cassiu_piece.name=memory_cassiu_piece
+item.memory_ximo_piece.name=memory_ximo_piece
+item.memory_aili.name=memory_aili
+item.memory_carlie.name=memory_carlie
+item.memory_cassiu.name=memory_cassiu
+item.memory_ximo.name=memory_ximo
+item.unreal_ring_piece.name=unreal_ring_piece
+item.unreal_ball_piece.name=unreal_ball_piece
+item.fox_armor_piece.name=fox_armor_piece
+item.dark_claw_piece.name=dark_claw_piece
+item.dark_soul_piece.name=dark_soul_piece
+item.banshee_veil_piece.name=banshee_veil_piece
+item.star_arrow_piece.name=star_arrow_piece
+item.heaven_arrow_piece.name=heaven_arrow_piece
+item.star_bow_piece.name=star_bow_piece
+item.eager_piece.name=eager_piece
+item.ximo_core_piece.name=desire_core_piece
+
+item.fruit_aili.name=fruit_aili
+item.fruit_carlie.name=fruit_carlie
+item.fruit_cassiu.name=fruit_cassiu
+item.fruit_ximo.name=fruit_ximo
+
+item.memory_corpse.name=corpse heart
+item.evil_ingot.name=evil_ingot
+item.instruction_book.name=instruction_book
+
+item.symbol_black.name=阴
+item.symbol_white.name=阳
+item.symbol_spring.name=春
+item.symbol_summer.name=夏
+item.symbol_aut.name=秋
+item.symbol_winter.name=冬
+item.symbol_gold.name=金
+item.symbol_green.name=木
+item.symbol_blue.name=水
+item.symbol_red.name=火
+item.symbol_earth.name=土
+item.symbol_0.name=乾
+item.symbol_1.name=巽
+item.symbol_2.name=坎
+item.symbol_3.name=艮
+item.symbol_4.name=坤
+item.symbol_5.name=震
+item.symbol_6.name=离
+item.symbol_7.name=兑
+
+item.exp_ball.name=experience ball
+item.dedication_dead_item.name=pure body
+item.sage_soup.name=sage_soup
+item.sage_bone.name=sage_bone
+item.desire_bone.name=desire_bone
+
+tile.memory_clock.name=memory_clock(lost forest)
+tile.magic_circle_level_1.name=magic_circle(middle)
+tile.evil_grass.name=evil_grass
+tile.evil_dirt.name=evil_dirt
+tile.evil_tail_grass.name=evil_tail_grass
+tile.flower_evil.name=blue_evil_flower
+tile.candle_stick.name=candle_stick
+tile.routu_block.name=routu_block
+fluid.dedication_exp=Dedication Pool Water
+fluid.dedication_life=Dedication Pool Water
+
+entity.magic_maid2_aili.name=magic_maid_aili
+entity.magic_maid2_aili_boss.name=magic_maid_aili_boss
+entity.magic_maid2_carlie.name=magic_maid_carlie
+entity.magic_maid2_carlie_boss.name=magic_maid_carlie_boss
+entity.magic_maid2_cassiu.name=magic_maid_cassiu
+entity.magic_maid2_cassiu_boss.name=magic_maid_cassiu_boss
+entity.magic_maid2_ximo.name=magic_maid_ximo
+entity.magic_maid2_ximo_boss.name=magic_maid_ximo_boss
+entity.magic_maid2_maier.name=magic_maid_maier
+entity.magic_maid2_lost_heart.name=magic_maid_lost_heart
+entity.magic_maid2_lost_evil.name=magic_maid_lost_evil
+
+skill.made_in_heaven.name=made in heaven
+skill.the_world.name=the world
+skill.jealous.name=jealous love
+skill.taiji.name=beginner to yin and yang
+skill.to_normal_land.name=to normal land
+skill.to_ruin_forest.name=to ruin forest
+
+crazy=crazy
+distort=distort
+heaven=heaven
+evil=evil

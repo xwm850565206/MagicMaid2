@@ -1,0 +1,6 @@
+{
+    "parent": "block/tinted_cross",
+    "textures": {
+        "cross": "magic_maid2:blocks/flower_evil"
+    }
+}

@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ximo.walk": {
+			"loop": true,
+			"animation_length": 0.875,
+			"bones": {
+				"main": {
+					"rotation": [45, 0, 0]
+				},
+				"head_bone": {
+					"rotation": [-45, 0, 0]
+				},
+				"wingRight": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"0.4167": [0, -45, 0],
+						"0.875": [0, 45, 0]
+					}
+				},
+				"wingLeft": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"0.4167": [0, 45, 0],
+						"0.875": [0, -45, 0]
+					}
+				}
+			}
+		},
+		"animation.ximo.skill1": {
+			"loop": true,
+			"animation_length": 0.79167,
+			"bones": {
+				"head_bone": {
+					"rotation": [-37.5, 0, 0]
+				},
+				"right_arm_bone": {
+					"rotation": [-125, 0, 0]
+				},
+				"armLeft": {
+					"rotation": [32.5, 0, 0]
+				},
+				"wingRight": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"0.1667": [0, 0, 0],
+						"0.375": [0, 45, 0],
+						"0.5833": [0, 0, 0],
+						"0.7917": [0, 45, 0]
+					}
+				},
+				"wingLeft": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"0.1667": [0, 0, 0],
+						"0.375": [0, -45, 0],
+						"0.5833": [0, 0, 0],
+						"0.7917": [0, -45, 0]
+					}
+				}
+			}
+		},
+		"animation.ximo.skill2": {
+			"animation_length": 1.5,
+			"bones": {
+				"right_arm_bone": {
+					"rotation": {
+						"0.0": [-150.9473, 20.43663, -32.15172],
+						"0.8333": [-150.9473, 20.43663, -32.15172],
+						"1.0417": [-73.45, 20.44, -32.15]
+					}
+				}
+			}
+		},
+		"animation.ximo.idle": {
+			"loop": true,
+			"animation_length": 0.875,
+			"bones": {
+				"wingRight": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"0.4167": [0, -45, 0],
+						"0.875": [0, 45, 0]
+					}
+				},
+				"wingLeft": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"0.4167": [0, 45, 0],
+						"0.875": [0, -45, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

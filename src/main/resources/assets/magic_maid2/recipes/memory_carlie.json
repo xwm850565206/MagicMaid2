@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "###",
+    "###",
+    "###"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "magic_maid2:memory_carlie_piece"
+    }
+  },
+
+  "result":
+  {
+    "item": "magic_maid2:memory_carlie",
+    "count": 1
+  }
+}

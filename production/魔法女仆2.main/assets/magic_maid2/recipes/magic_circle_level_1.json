@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magic_maid:magic_circle"
+    },
+    {
+      "item": "magic_maid2:memory_corpse"
+    }
+  ],
+  "result":
+  {
+    "item": "magic_maid2:magic_circle_level_1",
+    "count": 1
+  }
+}

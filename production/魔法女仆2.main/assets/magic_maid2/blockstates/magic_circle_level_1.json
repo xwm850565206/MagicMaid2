@@ -1,0 +1,7 @@
+{
+    "variants":
+    {
+    	"open=true": {"model": "magic_maid2:magiccircleon" },
+        "open=false":{"model": "magic_maid2:magiccircleoff" }
+    }
+}

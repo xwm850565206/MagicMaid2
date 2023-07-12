@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " ##",
+    " *#",
+    "x  "
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "magic_maid2:star_arrow_piece"
+    },
+    "*":
+    {
+      "item": "magic_maid:holystone",
+      "data": 0
+    },
+    "x":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "magic_maid2:star_arrow",
+    "count": 1
+  }
+}

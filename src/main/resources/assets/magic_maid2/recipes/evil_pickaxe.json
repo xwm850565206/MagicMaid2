@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "magic_maid2:evil_ingot"
+    }
+  },
+  "result": {
+    "item": "magic_maid2:evil_pickaxe"
+  }
+}

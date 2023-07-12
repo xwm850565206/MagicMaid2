@@ -1,0 +1,405 @@
+[
+  [
+    {
+      "type": "content",
+      "name": "写在前面",
+      "description" : "尊敬的玩家，这是一本说明书，请认真阅读.有任何建议欢迎在评论区留言或者进群反馈"
+    },
+    {
+      "type": "content",
+      "name": "写在前面",
+      "description" : "目前版本5.1，修复放出宠物汐墨崩溃的bug，修复其他已知bug"
+    },
+    {
+      "type": "content",
+      "name": "写在前面",
+      "description" : "魔法少女-迷雾森林-5.0测试版，接下来会继续完善[荒芜大陆]，新的boss和梅尔的相关剧情和玩家宠物逻辑"
+    },
+    {
+      "type": "content",
+      "name": "写在前面",
+      "description" : "该模组还会不断更新！"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "邪恶",
+      "description": "现在邪恶可以右键，让人获得邪恶buff，没有邪恶buff的人在迷雾森林中会获得凋零buff",
+      "resourceLocation": "magic_maid:evil"
+    },
+    {
+      "type": "item",
+      "name": "暗灭",
+      "description": "卡修的武器之一，玩家可以右键蓄力来向前突击并对附近产生邪念爆炸",
+      "resourceLocation": "magic_maid2:dark_claw"
+    },
+    {
+      "type": "item",
+      "name": "魂晶",
+      "description": "卡修的武器之一，玩家可以右键蓄力来向前发射法球",
+      "resourceLocation": "magic_maid2:dark_soul"
+    },
+    {
+      "type": "item",
+      "name": "女妖面纱",
+      "description": "卡修的防具",
+      "resourceLocation": "magic_maid2:banshee_veil"
+    },
+    {
+      "type": "item",
+      "name": "虚化",
+      "description": "艾莉的武器之一，玩家可以右键将附件最近敌人的灵魂引出体外",
+      "resourceLocation": "magic_maid2:unreal_ring"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "梦呓",
+      "description": "艾莉的武器之一，过于bug，暂时不打算开发玩家使用",
+      "resourceLocation": "magic_maid2:unreal_ball"
+    },
+    {
+      "type": "item",
+      "name": "精灵甲胄",
+      "description": "艾莉的防具",
+      "resourceLocation": "magic_maid2:fox_armor"
+    },
+    {
+      "type": "item",
+      "name": "星空",
+      "description": "卡莉尔的武器之一，玩家可以将其作为箭矢，使用[水晶弓]发射，随机射出某种颜色的箭矢，每种箭矢有不同的效果，减少移速、减少最大生命值、减少攻击力、减少饱食度、雷击、着火等",
+      "resourceLocation": "magic_maid2:star_arrow"
+    },
+    {
+      "type": "item",
+      "name": "天堂",
+      "description": "卡莉尔的武器之一，玩家可以将其作为箭矢，使用[水晶弓]发射，造成穿透伤害和真实伤害，并带有斩杀效果",
+      "resourceLocation": "magic_maid2:heaven_arrow"
+    },
+    {
+      "type": "item",
+      "name": "水晶弓",
+      "description": "卡莉尔的防具",
+      "resourceLocation": "magic_maid2:star_bow"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "渴求",
+      "description": "汐墨的武器，在汲取欲念阶段，表现为骷髅，在释放欲念阶段，表现为玩家头颅",
+      "resourceLocation": "magic_maid2:eager"
+    },
+    {
+      "type": "item",
+      "name": "欲核",
+      "description": "汐墨的防具，给汐墨穿戴后可以增加汐墨的最大生命值\n\n",
+      "resourceLocation": "magic_maid2:ximo_core"
+    },
+    {
+    "type": "item",
+    "name": "邪恶之刃",
+    "description": "在魔法石板(中级)中，将[邪恶]注入渡魂之刃得到，右键可以发射邪恶能量",
+    "resourceLocation": "magic_maid2:evil_ghost_obsession_sword"
+  },
+    {
+      "type": "item",
+      "name": "邪恶锭",
+      "description": "在魔法石板(中级)中，将[邪恶]注入铁锭得到，邪恶锭可以用来做防具，做法与原版防具相同，也可以修复[邪恶之刃]，邪恶锭制作工具还在制作...",
+      "resourceLocation": "magic_maid2:evil_ingot"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "邪恶头盔",
+      "description": "由邪恶锭制作而成的头盔，可以让穿戴者持续获得[邪恶buff]",
+      "resourceLocation": "magic_maid2:evil_helmet"
+    },
+    {
+      "type": "item",
+      "name": "邪恶胸甲",
+      "description": "由邪恶锭制作而成的胸甲，可以让穿戴者持续凋零周围生物",
+      "resourceLocation": "magic_maid2:evil_chestplate"
+    },
+    {
+      "type": "item",
+      "name": "邪恶护膝",
+      "description": "邪恶锭制作而成的护膝，可以让穿戴者抵消一次正常死亡",
+      "resourceLocation": "magic_maid2:evil_leggings"
+    },
+    {
+    "type": "item",
+    "name": "邪恶靴",
+    "description": "邪恶锭制作而成的靴子，可以让穿戴者增加移速和攻击力",
+    "resourceLocation": "magic_maid2:evil_boots"
+  }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "邪恶镐",
+      "description": "邪恶锭制作而成的镐，拥有更高的收集等级，可以收集[无垢之躯]",
+      "resourceLocation": "magic_maid2:evil_pickaxe"
+    },
+    {
+      "type": "item",
+      "name": "骸骨之心",
+      "description": "在维度[迷雾森林]中，找到神秘的洞穴后，答对骸骨的问题得到，每个玩家只能获得一次",
+      "resourceLocation": "magic_maid2:memory_corpse"
+    },
+    {
+      "type": "item",
+      "name": "魔法石板(中级)",
+      "description": "在工作台中使用[骸骨之心]强化[魔法石板]得到，可以使用初级和中级的石板公式",
+      "resourceLocation": "magic_maid2:magic_circle_level_1"
+    },
+    {
+      "type": "item",
+      "name": "无垢之躯",
+      "description": "在奉献池水(紫色)中被奉献后，会形成一具无垢之躯，右键放置在祭祀台上玻璃处祈求祂的恩赐",
+      "resourceLocation": "magic_maid2:dedication_dead_item"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "经验结晶",
+      "description": "玩家在奉献池(黄色)中，会将经验持续转化为经验结晶，经验结晶右键对宠物使用来给宠物增加经验",
+      "resourceLocation": "magic_maid2:exp_ball"
+    },
+    {
+      "type": "item",
+      "name": "奉献池水(黄色)",
+      "description": "奉献池位于迷雾森林维度，在神秘洞穴附近，玩家在其中会将经验转移出体外形成[经验结晶]，其他生物会持续掉血",
+      "resourceLocation": "forge:bucketfilled"
+    },
+    {
+      "type": "item",
+      "name": "奉献池水(紫色)",
+      "description": "奉献池位于迷雾森林维度，在神秘洞穴附近，玩家在其中会按顺序进行以下步骤，判断玩家正义值(喂养动物增加)，然后将正义洗出体外，判断玩家邪恶值(击杀生物增加)，然后将邪恶洗出体外，最后玩家死亡，生成一具[无垢之躯]，其他生物会持续掉血",
+      "resourceLocation": "forge:bucketfilled"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "贤者之骨",
+      "description": "在荒芜大陆的平原地形中，有几率遇到高贵的遗骨群，打碎遗骨有概率掉落。在荒芜大陆中右键使用召唤[汐墨]。",
+      "resourceLocation": "magic_maid2:sage_bone"
+    },
+    {
+      "type": "item",
+      "name": "欲者之骨",
+      "description": "在荒芜大陆的平原地形中，有几率遇到[欲者]，击杀后掉落。欲者之骨可以直接右键，获得[渴求]buff，提高蓝量的恢复速度",
+      "resourceLocation": "magic_maid2:desire_bone"
+    },
+    {
+      "type": "item",
+      "name": "贤者骨粉",
+      "description": "在工作台中用[贤者之骨]制作而成，右键可以获得与金苹果相当的效果。同时可以作为狼的食物",
+      "resourceLocation": "magic_maid2:sage_soup"
+    },
+    {
+      "type": "item",
+      "name": "烛台",
+      "description": "在荒芜大陆中有几率找到幸存者小屋，小屋中可以获得[烛台]。[烛台]是[梅尔]需要的物品之一，其他需要物品还在制作中",
+      "resourceLocation": "magic_maid2:candle_stick"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "物品介绍"
+    },
+    {
+      "type": "item",
+      "name": "蓝灵花",
+      "description": "世间的一切被污染，生灵涂炭，这种植物汲取了许多死者的养分，长在荒芜大陆中",
+      "resourceLocation": "magic_maid2:flower_evil"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "生物介绍"
+    },
+    {
+      "type": "entity",
+      "name": "艾莉",
+      "description": "[职业]:法师，武器有[虚化]和[梦呓]，护具有[精灵甲胄]\n[服侍]:在拥有[精灵甲胄]后，在艾莉周围玩家不会成为其他生物的攻击目标\n[战斗]:低额的普通攻击，艾莉不会成为其他生物的攻击模目标，使用[虚化]会引导出攻击生物的灵魂，5秒后爆炸，对该目标造成伤害，在5秒内可以攻击这些灵魂让其失效。使用[梦呓]会让目标进入[疯狂]状态",
+      "resourceLocation": "magic_maid2:magic_maid2_aili"
+    },
+    {
+      "type": "entity",
+      "name": "卡修",
+      "description": "[职业]:游侠，武器有[暗灭]和[魂晶]，护具有[女妖面纱]\n[服侍]:在拥有[女妖面纱]后，会为玩家提供隐身buff\n[战斗]:低额的普通攻击，使用[暗灭]会跃起然后轰击一块区域，对被轰击的目标施加[扭曲]。使用[魂晶]会发射出法球，4秒后爆裂，对被爆裂的目标施加[扭曲]",
+      "resourceLocation": "magic_maid2:magic_maid2_cassiu"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "生物介绍"
+    },
+    {
+      "type": "entity",
+      "name": "卡莉尔",
+      "description": "[职业]:游侠，武器有[星空]和[天堂]，护具有[水晶弓]\n[服侍]:在拥有[水晶弓]后，会为玩家提供夜视buff\n[战斗]:低额的普通攻击，对周围有敌意的生物造成伤害，使用[星空]随机发射出三支箭，每种颜色的箭有不同的效果:红色:让目标起火;橙色:削减目标最大生命值;黄色:削减目标移动速度;绿色:削减目标攻击力;青色:让目标饱食度降为0;蓝色:掉落玩家所有护具;紫色:闪电攻击。使用[天堂]会造成穿透伤害，如果玩家的血量不足以承受本次伤害则施加[天堂]",
+      "resourceLocation": "magic_maid2:magic_maid2_carlie"
+    },
+    {
+      "type": "entity",
+      "name": "汐墨",
+      "description": "[职业]:法师，武器有[渴求]，护具有[欲核]\n[服侍]:为玩家恢复饱食度\n[战斗]:低额的普通攻击，会躲避投掷物，使用[渴求]汲取附近敌人的欲念，将敌人拉向空中并造成伤害。完成充能后会创造一个欲念场，里面的生物攻击力得到提升并且会随意攻击生物。玩家在欲念场中会自动使用主手物品攻击靠近的生物，同时汐墨释放欲念攻击目标。",
+      "resourceLocation": "magic_maid2:magic_maid2_ximo"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "生物介绍"
+    },
+    {
+      "type": "entity",
+      "name": "梅尔",
+      "description": "[职业]:???\n[服侍]:???\n[战斗]:？？？\n目前玩家可以在[迷雾森林]维度的[梅尔小屋]找到她，她的更多故事还在制作。",
+      "resourceLocation": "magic_maid2:magic_maid2_maier"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "buff介绍"
+    },
+    {
+      "type": "content",
+      "name": "疯狂",
+      "description": "进入疯狂状态，玩家不会死去，视野里所有生物变为兔子，玩家需要击杀一只由艾莉幻化出的真正的兔子才能解除状态(你永远到达不了死亡的真实)"
+    },
+    {
+      "type": "content",
+      "name": "扭曲",
+      "description": "受到伤害后有几率立刻死亡，同时掉落身上的所有物品"
+    },
+    {
+      "type": "content",
+      "name": "天堂",
+      "description": "右键使用任何物品会被传送到地狱"
+    },
+    {
+      "type": "content",
+      "name": "邪恶",
+      "description": "用邪恶包裹全身来深入充满邪气的迷雾森林"
+    },
+    {
+      "type": "content",
+      "name": "渴求",
+      "description": "蓝量恢复速度翻倍"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "结构介绍"
+    },
+    {
+      "type": "content",
+      "name": "奉献池(黄色)",
+      "description": "献池位于迷雾森林维度，在神秘洞穴附近，玩家在其中会将经验转移出体外形成[经验结晶]，其他生物会持续掉血"
+    },
+    {
+      "type": "content",
+      "name": "奉献池(紫色)",
+      "description": "奉献池位于迷雾森林维度，在神秘洞穴附近，玩家在其中会按顺序进行以下步骤，判断玩家正义值(喂养动物增加)，然后将正义洗出体外，判断玩家邪恶值(击杀生物增加)，然后将邪恶洗出体外，最后玩家死亡，生成一具[无垢之躯]，其他生物会持续掉血"
+    },
+    {
+      "type": "content",
+      "name": "祭祀池",
+      "description": "祭祀池位于迷雾森林维度，在神秘洞穴附近，将[无垢之躯]摆在顶部的玻璃上，将会有几率得到物品，物品有技能书、邪恶锭、圣痕、烤马铃薯"
+    },
+    {
+      "type": "content",
+      "name": "梅尔小屋",
+      "description": "梅尔小屋位于迷雾森林维度，在神秘洞穴附近，可以右键[梅尔]与其对话，更多的剧情仍在制作"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "维度介绍"
+    },
+    {
+      "type": "content",
+      "name": "荒芜大陆",
+      "description": "在荒芜大陆中有多种遗迹，这些遗迹可以获得一些技能、物品。使用[贤者之骨]可以召唤出[汐墨]，10分钟内没有击败[汐墨]，[汐墨]会自动消失。汐墨免疫[正义]。去往荒芜大陆需要使用通过与[梅尔]对话获得的技能[荒芜大陆传送]。目前只有平原地形(可以获得烛台)，还打算增加三种地形，对应另外三种任务物品。"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "更新日志"
+    },
+    {
+      "type": "content",
+      "name": "1.5",
+      "description": "目前版本1.5，修复敌我ai的判定问题，现在会正确对敌人造成伤害，修复打怪不加经验的问题"
+    },
+    {
+      "type": "content",
+      "name": "3.0",
+      "description": "目前版本3.0，修复部分物品没有合成表的问题，添加邪恶锭，邪恶之刃，邪恶头盔，邪恶胸甲，邪恶护膝，邪恶靴，新添加一本遗迹中的日记，添加神秘洞穴，因为已有存档中维度加载后不会再次加载，所以需要新的存档才能看到日记和洞穴。"
+    },
+    {
+      "type": "content",
+      "name": "4.0",
+      "description" : "目前版本4.0，神秘洞穴现在更加醒目(有地表部分)，添加两个奉献池(在洞穴附近)，一个祭祀池(在洞穴附近)，添加技能[天堂制造]、[时间停止]、[魔女之爱]，修正卡修和卡莉尔远程攻击的AI，修正卡莉尔的攻击方式，现在卡莉尔的箭会穿过友军，添加物品[邪恶镐]、[经验结晶]，修复bug若干，因为已有存档中维度加载后不会再次加载，如果想在这个存档接着玩的话，需要进入.minecraft/saves/你的存档/, 删掉迷雾森林维度的数据。"
+    }
+  ],
+  [
+    {
+      "type": "title",
+      "name": "更新日志"
+    },
+    {
+      "type": "content",
+      "name": "4.5",
+      "description" : "目前版本4.5，添加迷雾森林boss武器的玩家使用逻辑，添加神秘洞穴阵法奖励[初窥调和]，修复洞穴和祭坛等建筑生成失败的bug，修复卡莉尔敌我判断错误的bug，修复[经验结晶]错误显示在其他创造栏的bug，修复其他反馈bug。"
+    },
+    {
+      "type": "content",
+      "name": "5.0",
+      "description" : "目前版本5.0，添加新维度[荒芜大陆]以及维度内容,添加新boss[汐墨],新的生物[梅尔]，修复迷雾森林不生成洞穴的bug，同时现在迷雾森林的洞穴附件会有[梅尔]的小屋，需要重新生成维度才能生成。修复[艾莉]的武器使用会掉落技能书的bug。"
+    }
+  ]
+]

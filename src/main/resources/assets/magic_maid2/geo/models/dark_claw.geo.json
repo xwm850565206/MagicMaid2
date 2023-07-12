@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.dark_claw",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "main",
+					"pivot": [0.5, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 0, 2], "size": [5, 5, 1], "uv": [8, 0]},
+						{"origin": [-3.5, 0, -3], "size": [1, 5, 6], "uv": [0, 0]},
+						{"origin": [1.5, 0, -3], "size": [1, 5, 5], "uv": [9, 6]},
+						{"origin": [-2.5, 0, -3], "size": [4, 5, 1], "uv": [0, 15]},
+						{"origin": [0.5, 5, -2], "size": [1, 1, 4], "uv": [10, 16]},
+						{"origin": [-1.5, 5, 1], "size": [2, 1, 1], "uv": [0, 13]},
+						{"origin": [-2.5, 5, -2], "size": [1, 1, 4], "uv": [16, 2]},
+						{"origin": [-1.5, 5, -2], "size": [2, 1, 1], "uv": [0, 11]}
+					]
+				},
+				{
+					"name": "tile4",
+					"parent": "main",
+					"pivot": [-2, 6, -0.5],
+					"cubes": [
+						{"origin": [1, 6, -0.5], "size": [1, 4, 1], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "tile3",
+					"parent": "main",
+					"pivot": [-0.5, 6, 1],
+					"cubes": [
+						{"origin": [-1, 6, 1.5], "size": [1, 4, 1], "uv": [20, 15]}
+					]
+				},
+				{
+					"name": "tile2",
+					"parent": "main",
+					"pivot": [-2, 6, -0.5],
+					"cubes": [
+						{"origin": [-3, 6, -0.5], "size": [1, 4, 1], "uv": [19, 20]}
+					]
+				},
+				{
+					"name": "tile1",
+					"parent": "main",
+					"pivot": [-1, 6, -1.5],
+					"cubes": [
+						{"origin": [-1, 6, -2.5], "size": [1, 4, 1], "uv": [0, 21]}
+					]
+				}
+			]
+		}
+	]
+}

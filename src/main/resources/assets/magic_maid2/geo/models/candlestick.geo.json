@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.candlestick",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 6.57143, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 1, 6], "uv": [0, 0]},
+						{"origin": [-2, 1, -2], "size": [4, 1, 4], "uv": [0, 9]},
+						{"origin": [-1.5, 2, -1.5], "size": [3, 6, 3], "uv": [13, 11]}
+					]
+				},
+				{
+					"name": "top",
+					"parent": "bone",
+					"pivot": [0, 7.75, 0],
+					"cubes": [
+						{"origin": [-4.5, 7, -0.5], "size": [9, 1, 1], "uv": [0, 7]},
+						{"origin": [2.5, 8, -0.5], "size": [1, 5, 1], "uv": [4, 14]},
+						{"origin": [-0.5, 8, -0.5], "size": [1, 5, 1], "uv": [0, 14]},
+						{"origin": [-3.5, 8, -0.5], "size": [1, 5, 1], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

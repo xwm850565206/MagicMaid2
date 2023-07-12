@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x x",
+    "#*#",
+    "###"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "magic_maid2:dark_claw_piece"
+    },
+    "*":
+    {
+      "item": "magic_maid:holystone",
+      "data": 0
+    },
+    "x":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "magic_maid2:dark_claw",
+    "count": 1
+  }
+}

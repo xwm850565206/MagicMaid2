@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "magic_maid2:evil_ingot"
+    }
+  },
+  "result": {
+    "item": "magic_maid2:evil_chestplate"
+  }
+}

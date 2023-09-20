@@ -1,10 +1,8 @@
 package com.xwm.magicmaid2.core.network;
 
 import com.xwm.magicmaid2.core.network.packet.client.CPacketGiveItem;
-import com.xwm.magicmaid2.core.network.packet.server.SPacketAddRenderTaskBeam;
-import com.xwm.magicmaid2.core.network.packet.server.SPacketAddRenderTaskDrived;
-import com.xwm.magicmaid2.core.network.packet.server.SPacketAddRenderTaskTaiJi;
-import com.xwm.magicmaid2.core.network.packet.server.SPacketModifier;
+import com.xwm.magicmaid2.core.network.packet.client.CPacketSpawnEntity;
+import com.xwm.magicmaid2.core.network.packet.server.*;
 import com.xwm.magicmaid2.core.util.Reference;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -25,8 +23,10 @@ public class NetworkLoader
         registerMessage(SPacketAddRenderTaskTaiJi.Handler.class, SPacketAddRenderTaskTaiJi.class, Side.CLIENT);
         registerMessage(SPacketAddRenderTaskDrived.Handler.class, SPacketAddRenderTaskDrived.class, Side.CLIENT);
         registerMessage(SPacketModifier.Handler.class, SPacketModifier.class, Side.CLIENT);
+        registerMessage(SPacketParticle6.Handler.class, SPacketParticle6.class, Side.CLIENT);
 
         registerMessage(CPacketGiveItem.Handler.class, CPacketGiveItem.class, Side.SERVER);
+        registerMessage(CPacketSpawnEntity.Handler.class, CPacketSpawnEntity.class, Side.SERVER);
     }
 
     private static <REQ extends IMessage, REPLY extends IMessage> void registerMessage(

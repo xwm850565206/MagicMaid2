@@ -400,9 +400,9 @@ public class ChunkGeneratorRuinForest implements IChunkGenerator
      */
     public void recreateStructures(Chunk chunkIn, int x, int z)
     {
-        if (mapFeaturesEnabled)
-        {
-            this.forestStructure.generate(world, x, z, null);
-        }
+//        if (mapFeaturesEnabled)
+//        {
+//            this.forestStructure.generate(world, x, z, null);
+//        }
     }
 }

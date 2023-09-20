@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magic_maid2:memory_ximo"
+    },
+    {
+      "item": "minecraft:ender_eye",
+      "data": 0
+    }
+  ],
+
+  "result":
+  {
+    "item": "magic_maid2:fruit_ximo",
+    "count": 1
+  }
+}

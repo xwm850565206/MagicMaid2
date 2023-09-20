@@ -1,11 +1,9 @@
 package com.xwm.magicmaid2.common.block;
 
-import com.xwm.magicmaid.Main;
 import com.xwm.magicmaid.object.block.BlockBase;
 import com.xwm.magicmaid2.common.tileentity.TileEntityCandleStick;
 import com.xwm.magicmaid2.core.init.BlockInit;
 import com.xwm.magicmaid2.core.init.ItemInit;
-import net.minecraft.block.BlockEndRod;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -14,27 +12,17 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import software.bernie.example.block.BotariumBlock;
-import software.bernie.example.block.FertilizerBlock;
-import software.bernie.geckolib3.core.IAnimatable;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -43,6 +31,7 @@ import java.util.Random;
 public class BlockCandleStick extends BlockBase implements ITileEntityProvider {
     private Random random = new Random();
     public static final PropertyDirection FACING = PropertyDirection.create("facing");
+    protected static final AxisAlignedBB FULL_BLOCK_AABB = new AxisAlignedBB(0.3, 0, 0.3, 0.7, 0.9, 0.7);
 
 
     public BlockCandleStick(String name) {
@@ -66,6 +55,13 @@ public class BlockCandleStick extends BlockBase implements ITileEntityProvider {
     public TileEntity createNewTileEntity(World worldIn, int meta) {
         return new TileEntityCandleStick();
     }
+
+    @Deprecated
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return FULL_BLOCK_AABB;
+    }
+
 
     @Override
     public EnumBlockRenderType getRenderType(IBlockState state)

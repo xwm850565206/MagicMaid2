@@ -88,7 +88,8 @@ public class EntityMagicMaidMaier extends EntityMaidBase implements IAnimatable,
     protected ResourceLocation getLootTable()
     {
         if (getTrueHealth() > 0) return null;
-        return LootTableInit.HOLY_FRUIT_AILI;
+//        return LootTableInit.HOLY_FRUIT_AILI;
+        return null;
     }
 
     @Override

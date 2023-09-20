@@ -286,4 +286,8 @@ public class EntityMagicMaidXimoBoss extends EntityMagicMaidXimo implements IEnt
         return false;
     }
 
+    @Override
+    public boolean isEnemy(EntityLivingBase entityLivingBase) {
+        return true;
+    }
 }

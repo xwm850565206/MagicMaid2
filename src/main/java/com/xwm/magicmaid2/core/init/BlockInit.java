@@ -15,6 +15,9 @@ public class BlockInit
     public static Block BLOCK_EVIL_GRASS = new BlockEvilGrass("evil_grass", Material.GRASS);
     public static Block BLOCK_EVIL_DIRT = new BlockBase("evil_dirt", Material.GROUND);
 
+    public static Block BLOCK_EVIL_LOG = new BlockEvilLog("evil_log");
+
+    public static Block BLOCK_EVIL_LEAVE = new BlockEvilLeaves("evil_leaves");
     public static Block BLOCK_EVIL_TALL_GRASS = new BlockEvilTallGrass("evil_tall_grass");
 
     public static Block BLOCK_FLOWER_EVIL = new BlockEvilTallGrass("flower_evil");
@@ -26,11 +29,11 @@ public class BlockInit
     public static Block BLOCK_DEDICATION_DEAD = new BlockDedicationDead("dedication_dead");
     public static Block BLOCK_SYMBOL = new BlockSymbol("symbol");
     public static Block BLOCK_CANDLE_STICK = new BlockCandleStick("candle_stick");
+    public static Block BLOC_HOLY_CROSS = new BlockHolyCross("holy_cross_maid2");
     public static Block BLOCK_ROUTU_BLOCK = new BlockRoutu("routu_block");
 
+    public static Block BLOCK_EVIL_SKELETON_BLOCK = new BlockEvilSkeleton("evil_skeleton");
     public static Block BLOCK_MAGIC_CIRCLE_LEVEL_1 = new BlockMagicCircleLevel1("magic_circle_level_1");
-
-
     public static final Block DEDICATION_EXP_BLOCK = new BlockFluidDedicationExp("dedication_exp", FluidInit.DEDICATION_EXP_FLUID, Material.WATER);
     public static final BlockFluidDedicationLife DEDICATION_LIFE_BLOCK = new BlockFluidDedicationLife("dedication_life", FluidInit.DEDICATION_LIFE_FLUID, Material.WATER);
 }

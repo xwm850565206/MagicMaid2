@@ -1,12 +1,10 @@
 package com.xwm.magicmaid2.client.render;
 
-import com.xwm.magicmaid2.client.render.tileentity.TileEntityCorpseRenderer;
-import com.xwm.magicmaid2.client.render.tileentity.TileEntityDedicationDeadRenderer;
-import com.xwm.magicmaid2.client.render.tileentity.TileEntityForestPortalRenderer;
-import com.xwm.magicmaid2.client.render.tileentity.TileEntitySymbolRenderer;
+import com.xwm.magicmaid2.client.render.tileentity.*;
 import com.xwm.magicmaid2.common.block.BlockCandleStick;
 import com.xwm.magicmaid2.common.entity.EntitySoul;
 import com.xwm.magicmaid2.common.entity.maid.*;
+import com.xwm.magicmaid2.common.entity.mob.EntityEvilSkeleton;
 import com.xwm.magicmaid2.common.entity.mob.EntityLostEvil;
 import com.xwm.magicmaid2.common.entity.mob.EntityLostHeart;
 import com.xwm.magicmaid2.common.entity.mob.EntityRoutu;
@@ -48,6 +46,7 @@ public class RenderHandler
         RenderingRegistry.registerEntityRenderingHandler(EntityMagicMaidMaier.class, RenderEntityMagicMaidMaier::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityLostHeart.class, RenderEntityLostHeart::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityLostEvil.class, RenderEntityLostEvil::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityEvilSkeleton.class, RenderEntityEvilSkeleton::new);
 
         RenderingRegistry.registerEntityRenderingHandler(EntityRoutu.class, RenderEntityRoutu::new);
 
@@ -64,6 +63,8 @@ public class RenderHandler
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySymbol.class, new TileEntitySymbolRenderer());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDedicationDead.class, new TileEntityDedicationDeadRenderer());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCandleStick.class, new RenderCandleStick());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEvilSkeleton.class, new TileEntityEvilSkeletonRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityHolyCross.class, new TileEntityHolyCrossRenderer());
 
     }
 

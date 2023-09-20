@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -98,7 +99,7 @@ public class ItemEvilArmor extends ItemArmor implements IHasModel, IRegistrable
                     List<EntityLivingBase> entityLivingBases = worldIn.getEntitiesWithinAABB(EntityLivingBase.class, entityIn.getEntityBoundingBox().grow(2));
                     for (EntityLivingBase entityLivingBase : entityLivingBases) {
                         try {
-                            if (MagicEquipmentUtils.checkEnemy(entityLivingBase, (EntityLivingBase) entityIn)) {
+                            if (MagicEquipmentUtils.checkEnemy(entityLivingBase, (EntityLivingBase) entityIn) && entityIn instanceof EntityMob) {
                                 entityLivingBase.addPotionEffect(new PotionEffect(MobEffects.WITHER, 100, 1));
                             }
                         } catch (Exception e) {

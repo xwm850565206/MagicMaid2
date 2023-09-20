@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":  { "model": "magic_maid2:evil_log" },
+        "axis=z":   { "model": "magic_maid2:evil_log", "x": 90 },
+        "axis=x":   { "model": "magic_maid2:evil_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "magic_maid2:evil_log" }
+    }
+}

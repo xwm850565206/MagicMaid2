@@ -82,6 +82,8 @@ public class EventLoader {
         GameRegistry.registerTileEntity(TileEntityMagicCircleLevel1.class, new ResourceLocation(Reference.MODID, "magic_circle_level_1"));
         GameRegistry.registerTileEntity(TileEntityDedicationDead.class, new ResourceLocation(Reference.MODID, "dedication_dead"));
         GameRegistry.registerTileEntity(TileEntityCandleStick.class, new ResourceLocation(Reference.MODID, "candle_stck"));
+        GameRegistry.registerTileEntity(TileEntityEvilSkeleton.class, new ResourceLocation(Reference.MODID, "evil_skeleton"));
+        GameRegistry.registerTileEntity(TileEntityHolyCross.class, new ResourceLocation(Reference.MODID, "holy_cross_maid2"));
 
     }
 

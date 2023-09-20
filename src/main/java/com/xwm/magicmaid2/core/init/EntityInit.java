@@ -2,6 +2,7 @@ package com.xwm.magicmaid2.core.init;
 
 import com.xwm.magicmaid2.common.entity.EntitySoul;
 import com.xwm.magicmaid2.common.entity.maid.*;
+import com.xwm.magicmaid2.common.entity.mob.EntityEvilSkeleton;
 import com.xwm.magicmaid2.common.entity.mob.EntityLostEvil;
 import com.xwm.magicmaid2.common.entity.mob.EntityLostHeart;
 import com.xwm.magicmaid2.common.entity.mob.EntityRoutu;
@@ -35,6 +36,8 @@ public class EntityInit
         registerEntity(event, Reference.MODID + "_maier", EntityMagicMaidMaier.class, ID++, 50, 0x000000, 0xffffff);
         registerEntity(event, Reference.MODID + "_lost_heart", EntityLostHeart.class, ID++, 50, 0x000000, 0x4e3d25);
         registerEntity(event, Reference.MODID + "_lost_evil", EntityLostEvil.class, ID++, 50, 0x000000, 0xffffff);
+        registerEntity(event, Reference.MODID + "_evil_skeleton", EntityEvilSkeleton.class, ID++, 50, 0x000000, 0xffffff);
+
         registerEntity(event, Reference.MODID + "_routu", EntityRoutu.class, ID++, 50, 0x858585, 0xc9c9c9);
 
 

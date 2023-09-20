@@ -28,6 +28,7 @@ public class ItemInit
     public static ItemAnimatableWeapon EAGER = new ItemEager("eager");
     public static ItemArmor XIMO_CORE = new ItemSuccubusCore("ximo_core");
     public static ItemBase EVIL_GHOST_OBSESSION_SWORD = new ItemEvilGhostObsessionSword("evil_ghost_obsession_sword");
+    public static ItemBase SCYTHE = new ItemBase("scythe");
     public static Item EVIL_HELMET = new ItemEvilArmor.Helmet(ItemEvilArmor.EVIL_ARMOR, "evil_helmet");
     public static Item EVIL_CHESTPLATE = new ItemEvilArmor.Chestplate(ItemEvilArmor.EVIL_ARMOR, "evil_chestplate");
     public static Item EVIL_LEGGINGS = new ItemEvilArmor.Leggings(ItemEvilArmor.EVIL_ARMOR, "evil_leggings");
@@ -73,6 +74,7 @@ public class ItemInit
     public static ItemSageBone SAGE_BONE = new ItemSageBone("sage_bone");
     public static ItemSageSoup SAGE_SOUP = new ItemSageSoup("sage_soup");
     public static ItemDesireBone DESIRE_BONE = new ItemDesireBone("desire_bone");
+    public static ItemBase HOLY_CROSS = new ItemBase("holy_cross_maid2");
 
     // symbol
     public static Item SYMBOL_WHITE = new ItemSymbol("symbol_white");

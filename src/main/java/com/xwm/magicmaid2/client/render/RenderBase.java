@@ -1,25 +1,19 @@
 package com.xwm.magicmaid2.client.render;
 
 import com.xwm.magicmaid.util.Reference;
-import com.xwm.magicmaid2.common.entity.maid.EntityMagicMaidCarlie;
 import com.xwm.magicmaid2.common.entity.maid.EntityMaidBase;
-import javafx.util.Pair;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.ModelVillager;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.IAnimatableModel;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.geo.render.built.GeoBone;
 import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
-import software.bernie.geckolib3.model.provider.GeoModelProvider;
 import software.bernie.geckolib3.model.provider.data.EntityModelData;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 import software.bernie.geckolib3.renderers.geo.GeoLayerRenderer;
@@ -27,8 +21,7 @@ import software.bernie.geckolib3.renderers.geo.RenderHurtColor;
 import software.bernie.shadowed.eliotlash.mclib.utils.Interpolations;
 
 import java.awt.*;
-import java.util.*;
-import java.util.List;
+import java.util.Collections;
 
 
 @SideOnly(Side.CLIENT)

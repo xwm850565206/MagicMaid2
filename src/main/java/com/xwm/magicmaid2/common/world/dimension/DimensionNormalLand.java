@@ -27,8 +27,10 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.WorldServer;
+import net.minecraft.world.biome.BiomeProvider;
 import net.minecraft.world.biome.BiomeProviderSingle;
 import net.minecraft.world.gen.IChunkGenerator;
+import net.minecraft.world.storage.WorldInfo;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -43,7 +45,8 @@ public class DimensionNormalLand extends WorldProvider
 
     public void init()
     {
-        this.biomeProvider = new BiomeProviderSingle(BiomeInit.NORMAL_LAND_PLAIN);
+//        this.biomeProvider = new BiomeProvider(new WorldInfo(world.getWorldInfo()));;
+        this.biomeProvider = new NormalLandBiomeProvider(world);
         this.hasSkyLight = true;
         NBTTagCompound nbttagcompound = this.world.getWorldInfo().getDimensionData(this.world.provider.getDimension());
         this.fightManager = this.world instanceof WorldServer ? new ITemporaryMagicBossManagerImpl((WorldServer)this.world, nbttagcompound.getCompoundTag("MaidFight")) : null;

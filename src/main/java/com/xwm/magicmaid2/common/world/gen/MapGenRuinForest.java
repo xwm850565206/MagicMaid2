@@ -44,7 +44,7 @@ public class MapGenRuinForest extends MapGenStructure
 
     public static class Start extends StructureStart
     {
-        private boolean isSizeable;
+        private boolean isSizeable = true;
 
         public Start()
         {

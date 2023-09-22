@@ -29,7 +29,7 @@ public class WorldGenNormalLandHillStructure extends WorldGenerator
 
     public WorldGenNormalLandHillStructure()
     {
-        this.structureName = Lists.newArrayList("evil_skeleton");
+        this.structureName = Lists.newArrayList("evil_skeleton", "evil_hut");
         this.catalog = "perform";
         this.rarity = "secret";
     }
@@ -49,8 +49,8 @@ public class WorldGenNormalLandHillStructure extends WorldGenerator
         Template template = manager.get(worldServer.getMinecraftServer(), location);
         if (template != null)
         {
-            if (structureName1.equals("tower") || structureName1.equals("treasure") || structureName1.equals("stone_pile"))
-                pos = pos.up();
+            if (structureName1.equals("evil_hut") )
+                pos = pos.up(5);
 
             IBlockState state = world.getBlockState(pos);
             world.notifyBlockUpdate(pos, state, state, 3);

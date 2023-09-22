@@ -6,6 +6,7 @@ import io.netty.buffer.ByteBuf;
 import jdk.nashorn.internal.ir.Block;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.math.BlockPos;
@@ -60,7 +61,18 @@ public class CPacketSpawnEntity implements IMessage {
             if (message.spawn)
             {
                 EntityEvilSkeleton skeleton = new EntityEvilSkeleton(world);
-                skeleton.setPositionAndRotation(message.pos.getX(), message.pos.getY(), message.pos.getZ(), world.getBlockState(message.pos).getValue(BlockEvilSkeleton.FACING).getOpposite().getHorizontalAngle(), 90);
+
+                if (world.getBlockState(message.pos).canEntitySpawn(skeleton))
+                    skeleton.setPosition(message.pos.getX(), message.pos.getY(), message.pos.getZ());
+                else {
+                    for (int x = -1; x <= 1; x++)
+                        for (int z = -1; z <= 1; z++)
+                        {
+                            if (world.getBlockState(message.pos.add(x, 0, z)).canEntitySpawn(skeleton))
+                                skeleton.setPosition(message.pos.getX() + x, message.pos.getY(), message.pos.getZ() + z);
+                        }
+                }
+
                 world.spawnEntity(skeleton);
             }
 

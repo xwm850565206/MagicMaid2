@@ -51,11 +51,11 @@ public class NormalLandHillTemplate extends StructureComponentTemplate
             cnt--;
         }
         else if(function.equals("evil_skeleton")) {
-            if (worldIn.getBlockState(pos.south()).getBlock() == Blocks.PLANKS)
+            if (worldIn.getBlockState(pos.south()).getBlock() == Blocks.PLANKS || worldIn.getBlockState(pos.south()).getBlock() == Blocks.STRUCTURE_BLOCK)
                 worldIn.setBlockState(pos, BlockInit.BLOCK_EVIL_SKELETON_BLOCK.getDefaultState().withProperty(BlockEvilSkeleton.FACING, EnumFacing.NORTH));
-            else if (worldIn.getBlockState(pos.north()).getBlock() == Blocks.PLANKS)
+            else if (worldIn.getBlockState(pos.north()).getBlock() == Blocks.PLANKS || worldIn.getBlockState(pos.north()).getBlock() == Blocks.STRUCTURE_BLOCK)
                 worldIn.setBlockState(pos, BlockInit.BLOCK_EVIL_SKELETON_BLOCK.getDefaultState().withProperty(BlockEvilSkeleton.FACING, EnumFacing.SOUTH));
-            else if (worldIn.getBlockState(pos.west()).getBlock() == Blocks.PLANKS)
+            else if (worldIn.getBlockState(pos.west()).getBlock() == Blocks.PLANKS || worldIn.getBlockState(pos.west()).getBlock() == Blocks.STRUCTURE_BLOCK)
                 worldIn.setBlockState(pos, BlockInit.BLOCK_EVIL_SKELETON_BLOCK.getDefaultState().withProperty(BlockEvilSkeleton.FACING, EnumFacing.EAST));
             else
                 worldIn.setBlockState(pos, BlockInit.BLOCK_EVIL_SKELETON_BLOCK.getDefaultState().withProperty(BlockEvilSkeleton.FACING, EnumFacing.WEST));

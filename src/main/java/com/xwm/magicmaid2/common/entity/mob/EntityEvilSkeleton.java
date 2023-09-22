@@ -18,6 +18,7 @@ import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -27,6 +28,7 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class EntityEvilSkeleton extends EntityMob implements IAnimatable
@@ -65,8 +67,8 @@ public class EntityEvilSkeleton extends EntityMob implements IAnimatable
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(35.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.35);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(12.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(2.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(15.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(300);
     }
 
@@ -94,9 +96,9 @@ public class EntityEvilSkeleton extends EntityMob implements IAnimatable
 
         if (isArmsRaised()) {
             if (getAttackType())
-                event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.evil_skeleton.attack_2", false));
-            else
                 event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.evil_skeleton.attack", false));
+            else
+                event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.evil_skeleton.attack_2", false));
 
         }
         else if (event.isMoving()) {
@@ -134,70 +136,84 @@ public class EntityEvilSkeleton extends EntityMob implements IAnimatable
         }
 
         @Override
-        protected void checkAndPerformAttack(EntityLivingBase entityLivingBase, double distance) {
-            double d0 = this.getAttackReachSqr(entityLivingBase);
+        public void updateTask() {
+            EntityLivingBase entitylivingbase = this.attacker.getAttackTarget();
+            if (entitylivingbase != null && entitylivingbase.isEntityAlive())
+            {
+                super.updateTask();
+            }
+            else {
+                this.checkAndPerformAttack(entitylivingbase, 0);
+            }
+        }
+
+        @Override
+        public boolean shouldContinueExecuting() {
+            boolean flag =  super.shouldContinueExecuting();
+            return flag || swingArmTick != -1;
+        }
+
+        @Override
+        protected void checkAndPerformAttack(@Nullable EntityLivingBase entityLivingBase, double distance) {
+            double d0 = 0;
+            if (entityLivingBase != null)
+                d0 = this.getAttackReachSqr(entityLivingBase);
 
             if (swingArmTick != -1) {
                 swingArmTick--;
                 this.attacker.getNavigator().setPath(null, 0);
             }
 
-            if (getAttackType()) {
-                if (distance <= d0) {
-                    if (swingArmTick == -1) {
-                        ((EntityEvilSkeleton) this.attacker).setArmsRaised(true);
-                        swingArmTick = 9;
-                    }
-                }
+            if (distance <= d0 && swingArmTick == -1 && entityLivingBase != null && entityLivingBase.isEntityAlive())
+            {
+                ((EntityEvilSkeleton) this.attacker).setArmsRaised(true);
+                swingArmTick = (((EntityEvilSkeleton) this.attacker).getAttackType()? 40: 30);
+            }
 
-                if (swingArmTick == 7 || swingArmTick == 2) {
-                    AxisAlignedBB attackBB = this.attacker.getEntityBoundingBox().offset(this.attacker.getLookVec().scale(2));
-                    List<EntityLivingBase> entityLivingBases = world.getEntitiesWithinAABB(EntityLivingBase.class, attackBB.grow(3));
+            if (!getAttackType()) {
+                if (swingArmTick == 20 || swingArmTick == 10) {
+                    AxisAlignedBB attackBB = this.attacker.getEntityBoundingBox().offset(this.attacker.getLookVec().scale(1));
+                    List<EntityLivingBase> entityLivingBases = world.getEntitiesWithinAABB(EntityLivingBase.class, attackBB.grow(1));
 
                     for (EntityLivingBase entityLivingBase1 : entityLivingBases) {
                         if (entityLivingBase1 != this.attacker)
-                            this.attacker.attackEntityAsMob(entityLivingBase);
+                            this.attacker.attackEntityAsMob(entityLivingBase1);
                     }
-                }
-
-                if (swingArmTick <= 0) {
-                    ((EntityEvilSkeleton) this.attacker).setArmsRaised(false);
-                    ((EntityEvilSkeleton) this.attacker).setAttackType(false);
                 }
             } else {
-                if (distance <= d0) {
-                    if (swingArmTick == -1) {
-                        ((EntityEvilSkeleton) this.attacker).setArmsRaised(true);
-                        swingArmTick = 12;
-                    }
-                }
 
-
-                if (swingArmTick == 4) {
+                if (swingArmTick == 12) {
                     AxisAlignedBB attackBB = this.attacker.getEntityBoundingBox().offset(this.attacker.getLookVec().scale(2));
-
-                    for (int i = 0; i < 10; i++) {
-                        SPacketParticle6 packet = new SPacketParticle6((attackBB.minX + attackBB.maxX) / 2.0, attackBB.minY, (attackBB.minZ + attackBB.maxZ) / 2.0, rand.nextFloat() - 0.5, rand.nextFloat(), rand.nextFloat() - 0.5, EnumParticleTypes.DRAGON_BREATH);
-                        NetworkLoader.instance.sendToDimension(packet, this.attacker.dimension);
-                    }
+                    world.playEvent(2006, new BlockPos((attackBB.minX+attackBB.maxX)/2.0, attackBB.minY, (attackBB.minZ+attackBB.maxZ) / 2.0), 0);
                 }
 
-                if (swingArmTick == 2) {
+                if (swingArmTick == 10) {
                     AxisAlignedBB attackBB = this.attacker.getEntityBoundingBox().offset(this.attacker.getLookVec().scale(2));
                     List<EntityLivingBase> entityLivingBases = world.getEntitiesWithinAABB(EntityLivingBase.class, attackBB.grow(3));
 
                     for (EntityLivingBase entityLivingBase1 : entityLivingBases) {
                         if (entityLivingBase1 != this.attacker)
-                            this.attacker.attackEntityAsMob(entityLivingBase);
+                            this.attacker.attackEntityAsMob(entityLivingBase1);
                     }
                 }
 
-                if (swingArmTick <= 0) {
-                    ((EntityEvilSkeleton) this.attacker).setArmsRaised(false);
-                    ((EntityEvilSkeleton) this.attacker).setAttackType(true);
-                }
+            }
+
+            if (swingArmTick == 0) {
+                ((EntityEvilSkeleton) this.attacker).setArmsRaised(false);
+                ((EntityEvilSkeleton) this.attacker).setAttackType(!((EntityEvilSkeleton) this.attacker).getAttackType());
+
             }
         }
+
+        @Override
+        public void resetTask() {
+            super.resetTask();
+            ((EntityEvilSkeleton) this.attacker).setArmsRaised(false);
+            ((EntityEvilSkeleton) this.attacker).setAttackType(!((EntityEvilSkeleton) this.attacker).getAttackType());
+        }
     }
+
+
 
 }

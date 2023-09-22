@@ -96,10 +96,10 @@ public class ItemEvilArmor extends ItemArmor implements IHasModel, IRegistrable
             super.onUpdate(stack, worldIn, entityIn, itemSlot, isSelected);
             if (itemSlot == 2 && stack.getItem() == ItemInit.EVIL_CHESTPLATE) {
                 if (entityIn instanceof EntityLivingBase) {
-                    List<EntityLivingBase> entityLivingBases = worldIn.getEntitiesWithinAABB(EntityLivingBase.class, entityIn.getEntityBoundingBox().grow(2));
+                    List<EntityMob> entityLivingBases = worldIn.getEntitiesWithinAABB(EntityMob.class, entityIn.getEntityBoundingBox().grow(2));
                     for (EntityLivingBase entityLivingBase : entityLivingBases) {
                         try {
-                            if (MagicEquipmentUtils.checkEnemy(entityLivingBase, (EntityLivingBase) entityIn) && entityIn instanceof EntityMob) {
+                            if (MagicEquipmentUtils.checkEnemy(entityLivingBase, (EntityLivingBase) entityIn)) {
                                 entityLivingBase.addPotionEffect(new PotionEffect(MobEffects.WITHER, 100, 1));
                             }
                         } catch (Exception e) {

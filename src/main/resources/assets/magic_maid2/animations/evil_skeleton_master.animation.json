@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.new": {
+			"loop": true
+		},
+		"animation.evil_skeleton_master.walk": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"main": {
+					"rotation": {
+						"vector": [10, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 4, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.evil_skeleton_master.attack": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"left_arm": {
+					"rotation": {
+						"vector": [-60, 10, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-180, 0, -15]
+						},
+						"0.125": {
+							"vector": [-180, 0, -25]
+						},
+						"0.25": {
+							"vector": [-160, 0, -25]
+						},
+						"0.375": {
+							"vector": [-160.28025, -3.40487, -15.59196]
+						},
+						"0.5": {
+							"vector": [-177.78, -3.4, -15.59]
+						},
+						"0.625": {
+							"vector": [-180, 0, -25]
+						},
+						"0.75": {
+							"vector": [-160, 0, -25]
+						},
+						"0.875": {
+							"vector": [-160.28025, -3.40487, -15.59196]
+						},
+						"1.0": {
+							"vector": [-177.78, -3.4, -15.59]
+						},
+						"1.125": {
+							"vector": [-180, 0, -25]
+						},
+						"1.25": {
+							"vector": [-90, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.evil_skeleton_master.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

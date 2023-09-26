@@ -4,10 +4,7 @@ import com.xwm.magicmaid2.client.render.tileentity.*;
 import com.xwm.magicmaid2.common.block.BlockCandleStick;
 import com.xwm.magicmaid2.common.entity.EntitySoul;
 import com.xwm.magicmaid2.common.entity.maid.*;
-import com.xwm.magicmaid2.common.entity.mob.EntityEvilSkeleton;
-import com.xwm.magicmaid2.common.entity.mob.EntityLostEvil;
-import com.xwm.magicmaid2.common.entity.mob.EntityLostHeart;
-import com.xwm.magicmaid2.common.entity.mob.EntityRoutu;
+import com.xwm.magicmaid2.common.entity.mob.*;
 import com.xwm.magicmaid2.common.entity.throwable.EntityEvilDeathBall;
 import com.xwm.magicmaid2.common.entity.throwable.EntityEvilSwordPower;
 import com.xwm.magicmaid2.common.entity.throwable.EntityHeavenArrow;
@@ -47,6 +44,7 @@ public class RenderHandler
         RenderingRegistry.registerEntityRenderingHandler(EntityLostHeart.class, RenderEntityLostHeart::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityLostEvil.class, RenderEntityLostEvil::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityEvilSkeleton.class, RenderEntityEvilSkeleton::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityEvilSkeletonMaster.class, RenderEntityEvilSkeletonMaster::new);
 
         RenderingRegistry.registerEntityRenderingHandler(EntityRoutu.class, RenderEntityRoutu::new);
 

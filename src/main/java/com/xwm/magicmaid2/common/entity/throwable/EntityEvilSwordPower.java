@@ -63,7 +63,7 @@ public class EntityEvilSwordPower extends EntityThrowable
             if (MagicEquipmentUtils.checkEnemy(this.thrower, entityLivingBase))
             {
                 try {
-                    IMagicCreatureManagerImpl.getInstance().attackEntityFrom(entityLivingBase, DamageSource.causeMobDamage(thrower).setMagicDamage(), 5);
+                    IMagicCreatureManagerImpl.getInstance().attackEntityFrom(entityLivingBase, DamageSource.causeMobDamage(thrower).setMagicDamage(), getStrength()*5);
                     entityLivingBase.addPotionEffect(new PotionEffect(MobEffects.POISON, 100, 2));
                 } catch (Exception e)
                 {

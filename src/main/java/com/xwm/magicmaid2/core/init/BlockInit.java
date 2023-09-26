@@ -13,7 +13,7 @@ public class BlockInit
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
     public static Block BLOCK_EVIL_GRASS = new BlockEvilGrass("evil_grass", Material.GRASS);
-    public static Block BLOCK_EVIL_DIRT = new BlockBase("evil_dirt", Material.GROUND);
+    public static Block BLOCK_EVIL_DIRT = new BlockEvilDirt("evil_dirt", Material.GROUND);
 
     public static Block BLOCK_EVIL_LOG = new BlockEvilLog("evil_log");
 

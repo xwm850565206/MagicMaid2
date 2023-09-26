@@ -2,10 +2,7 @@ package com.xwm.magicmaid2.common.block;
 
 import com.xwm.magicmaid.object.block.BlockBase;
 import com.xwm.magicmaid2.core.init.BlockInit;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockGrass;
-import net.minecraft.block.BlockTallGrass;
-import net.minecraft.block.IGrowable;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
@@ -24,6 +21,7 @@ public class BlockEvilGrass extends BlockBase implements IGrowable
 
     public BlockEvilGrass(String name, Material material) {
         super(name, material);
+        this.setSoundType(SoundType.PLANT);
         this.setTickRandomly(true);
     }
 

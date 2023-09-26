@@ -1,19 +1,15 @@
 package com.xwm.magicmaid2.common.potion;
 
 import com.google.common.collect.Maps;
-import com.xwm.magicmaid.init.ItemInit;
 import com.xwm.magicmaid.manager.IMagicCreatureManagerImpl;
-import com.xwm.magicmaid.network.entity.SPacketCapabilityUpdate;
-import com.xwm.magicmaid.player.MagicCreatureAttributes;
 import com.xwm.magicmaid.player.capability.CapabilityLoader;
 import com.xwm.magicmaid.player.capability.ICreatureCapability;
-import com.xwm.magicmaid2.core.network.NetworkLoader;
-import com.xwm.magicmaid2.core.network.packet.server.SPacketModifier;
+import com.xwm.magicmaid2.core.init.ItemInit;
+import net.minecraft.block.BlockGrass;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
@@ -22,10 +18,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.lwjgl.Sys;
 
 import java.util.Map;
 import java.util.UUID;
@@ -100,7 +94,7 @@ public class PotionDesire extends Potion
             GlStateManager.enableBlend(); //Forge: Make sure blend is enabled else tabs show a white border.
             GlStateManager.color(1, 1, 1, 1);
             RenderHelper.enableGUIStandardItemLighting();
-            Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(new ItemStack(ItemInit.ITEM_EVIL), x + 6, y + 8);
+            Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(new ItemStack(ItemInit.DESIRE_BONE), x + 6, y + 8);
             GlStateManager.disableRescaleNormal();
             GlStateManager.popMatrix();
         } catch (NullPointerException e){
@@ -121,7 +115,7 @@ public class PotionDesire extends Potion
             GlStateManager.enableBlend(); //Forge: Make sure blend is enabled else tabs show a white border.
             GlStateManager.color(1, 1, 1, 1);
             RenderHelper.enableGUIStandardItemLighting();
-            Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(new ItemStack(ItemInit.ITEM_EVIL), x + 4, y + 4);
+            Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(new ItemStack(ItemInit.DESIRE_BONE), x + 4, y + 4);
             GlStateManager.disableRescaleNormal();
             GlStateManager.popMatrix();
         } catch (NullPointerException e){

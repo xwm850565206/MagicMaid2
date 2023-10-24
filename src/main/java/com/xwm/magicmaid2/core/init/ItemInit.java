@@ -27,6 +27,10 @@ public class ItemInit
     public static ItemArmor STAR_BOW = new ItemStarBow("star_bow");
     public static ItemAnimatableWeapon EAGER = new ItemEager("eager");
     public static ItemArmor XIMO_CORE = new ItemSuccubusCore("ximo_core");
+
+    public static ItemAnimatableWeapon HEAVY_COLD = new ItemIceWing("heavy_cold");
+    public static ItemArmor NEVA_CORE = new ItemAngerCore("neva_core");
+
     public static ItemBase EVIL_GHOST_OBSESSION_SWORD = new ItemEvilGhostObsessionSword("evil_ghost_obsession_sword");
     public static ItemBase SCYTHE = new ItemBase("scythe");
     public static Item EVIL_HELMET = new ItemEvilArmor.Helmet(ItemEvilArmor.EVIL_ARMOR, "evil_helmet");
@@ -40,6 +44,7 @@ public class ItemInit
     public static Item MEMORY_CASSIU = new ItemMemoryCassiu("memory_cassiu");
     public static Item MEMORY_CARLIE = new ItemMemoryCarlie("memory_carlie");
     public static Item MEMORY_XIMO = new ItemMemoryXimo("memory_ximo");
+    public static Item MEMORY_NEVA = new ItemMemoryNeva("memory_neva");
     public static Item MEMORY_CORPSE = new ItemMemoryCorpse("memory_corpse");
 
     // fruit
@@ -47,6 +52,7 @@ public class ItemInit
     public static Item FRUIT_CASSIU = new ItemHolyFruitCassiu("fruit_cassiu");
     public static Item FRUIT_CARLIE = new ItemHolyFruitCarlie("fruit_carlie");
     public static Item FRUIT_XIMO = new ItemHolyFruitXimo("fruit_ximo");
+    public static Item FRUIT_NEVA = new ItemHolyFruitNeva("fruit_neva");
 
     // piece
     public static Item DARK_CLAW_PIECE = new ItemPiece("dark_claw_piece");
@@ -60,11 +66,14 @@ public class ItemInit
     public static Item STAR_BOW_PIECE = new ItemPiece("star_bow_piece");
     public static Item EAGER_PIECE = new ItemPiece("eager_piece");
     public static Item XIMO_CORE_PIECE = new ItemPiece("ximo_core_piece");
+    public static Item HEAVY_COLD_PIECE = new ItemPiece("heavy_cold_piece");
+    public static Item NEVA_CORE_PIECE = new ItemPiece("neva_core_piece");
 
     public static Item MEMORY_AILI_PIECE = new ItemPiece("memory_aili_piece");
     public static Item MEMORY_CASSIU_PIECE = new ItemPiece("memory_cassiu_piece");
     public static Item MEMORY_CARLIE_PIECE = new ItemPiece("memory_carlie_piece");
     public static Item MEMORY_XIMO_PIECE = new ItemPiece("memory_ximo_piece");
+    public static Item MEMORY_NEVA_PIECE = new ItemPiece("memory_neva_piece");
 
     public static Item EVIL_INGOT = new ItemEvilIngot("evil_ingot");
 

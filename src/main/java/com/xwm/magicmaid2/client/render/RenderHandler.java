@@ -5,10 +5,7 @@ import com.xwm.magicmaid2.common.block.BlockCandleStick;
 import com.xwm.magicmaid2.common.entity.EntitySoul;
 import com.xwm.magicmaid2.common.entity.maid.*;
 import com.xwm.magicmaid2.common.entity.mob.*;
-import com.xwm.magicmaid2.common.entity.throwable.EntityEvilDeathBall;
-import com.xwm.magicmaid2.common.entity.throwable.EntityEvilSwordPower;
-import com.xwm.magicmaid2.common.entity.throwable.EntityHeavenArrow;
-import com.xwm.magicmaid2.common.entity.throwable.EntityStarArrow;
+import com.xwm.magicmaid2.common.entity.throwable.*;
 import com.xwm.magicmaid2.common.tileentity.*;
 import com.xwm.magicmaid2.core.init.BlockInit;
 import com.xwm.magicmaid2.core.util.Reference;
@@ -41,6 +38,8 @@ public class RenderHandler
         RenderingRegistry.registerEntityRenderingHandler(EntityMagicMaidXimo.class, RenderEntityMagicMaidXimo::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityMagicMaidXimoBoss.class, RenderEntityMagicMaidXimo::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityMagicMaidMaier.class, RenderEntityMagicMaidMaier::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityMagicMaidNeva.class, RenderEntityMagicMaidNeva::new);
+
         RenderingRegistry.registerEntityRenderingHandler(EntityLostHeart.class, RenderEntityLostHeart::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityLostEvil.class, RenderEntityLostEvil::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityEvilSkeleton.class, RenderEntityEvilSkeleton::new);
@@ -55,6 +54,7 @@ public class RenderHandler
         RenderingRegistry.registerEntityRenderingHandler(EntityStarArrow.class, RenderEntityStarArrow::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityHeavenArrow.class, RenderEntityHeavenArrow::new);
         RenderingRegistry.registerEntityRenderingHandler(EntityEvilSwordPower.class, RenderEntityEvilSwordPower::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityIce.class, RenderEntityIce::new);
 //        RenderingRegistry.registerEntityRenderingHandler(EntityRing.class, RenderHoverRing::new);
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityForestPortal.class, new TileEntityForestPortalRenderer());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCorpse.class, new TileEntityCorpseRenderer());

@@ -1,6 +1,7 @@
 package com.xwm.magicmaid2.common.entity.mob;
 
 import com.xwm.magicmaid2.common.entity.throwable.EntityEvilSwordPower;
+import com.xwm.magicmaid2.common.entity.throwable.EntityIce;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
@@ -183,6 +184,7 @@ public class EntityEvilSkeletonMaster extends EntityMob implements IAnimatable
                 for (int i = -1; i <= 1; i++)
                 {
                     EntityEvilSwordPower ball = new EntityEvilSwordPower(world, this.attacker);
+//                    EntityIce ball = new EntityIce(world, this.attacker);
                     ball.setPosition(attacker.posX, attacker.posY + attacker.getEyeHeight(), attacker.posZ);
                     ball.setStrength(2);
                     if (entityLivingBase == null)

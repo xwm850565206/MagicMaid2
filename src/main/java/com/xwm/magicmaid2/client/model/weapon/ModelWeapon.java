@@ -20,6 +20,8 @@ public class ModelWeapon extends AnimatedGeoModel<ItemAnimatableWeapon>
             return new ResourceLocation(Reference.MODID, "geo/models/dark_soul.geo.json");
         else if (object == ItemInit.UNREAL_RING)
             return new ResourceLocation(Reference.MODID, "geo/models/unable_ring.geo.json");
+        else if (object == ItemInit.HEAVY_COLD)
+            return new ResourceLocation(Reference.MODID, "geo/models/neva_ice.geo.json");
         else
             return null;
     }
@@ -32,6 +34,8 @@ public class ModelWeapon extends AnimatedGeoModel<ItemAnimatableWeapon>
             return new ResourceLocation(Reference.MODID, "textures/items/dark_soul.png");
         else if (object == ItemInit.UNREAL_RING)
             return new ResourceLocation(Reference.MODID, "textures/items/unreal_ring.png");
+        else if (object == ItemInit.HEAVY_COLD)
+            return new ResourceLocation(Reference.MODID, "textures/entities/neva.png");
         else
             return null;
     }

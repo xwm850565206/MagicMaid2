@@ -22,6 +22,7 @@ public class NetworkLoader
         registerMessage(SPacketAddRenderTaskBeam.Handler.class, SPacketAddRenderTaskBeam.class, Side.CLIENT);
         registerMessage(SPacketAddRenderTaskTaiJi.Handler.class, SPacketAddRenderTaskTaiJi.class, Side.CLIENT);
         registerMessage(SPacketAddRenderTaskDrived.Handler.class, SPacketAddRenderTaskDrived.class, Side.CLIENT);
+        registerMessage(SPacketAddRenderTaskIceRegion.Handler.class, SPacketAddRenderTaskIceRegion.class, Side.CLIENT);
         registerMessage(SPacketModifier.Handler.class, SPacketModifier.class, Side.CLIENT);
         registerMessage(SPacketParticle6.Handler.class, SPacketParticle6.class, Side.CLIENT);
 

@@ -99,6 +99,21 @@ public class EquipmentInit
             .setType(EquipmentAttribute.EquipmentType.ARMOR);
 
 
+    public static EquipmentAttribute HEAVY_COLD = new EquipmentAttribute()
+            .setName("heavy_cold")
+            .setEquipment(ItemInit.HEAVY_COLD)
+            .setPiece(ItemInit.HEAVY_COLD_PIECE)
+            .setAttackDamage(ItemInit.HEAVY_COLD.getAttackDamage())
+            .setBaseArea(new Vec3d(1, 1, 1))
+            .setGrowArea(new Vec3d(0, 0, 0))
+            .setType(EquipmentAttribute.EquipmentType.WEAPON);
+
+    public static EquipmentAttribute NEVA_CORE = new EquipmentAttribute()
+            .setName("neva_core")
+            .setEquipment((ItemEquipment) ItemInit.NEVA_CORE)
+            .setPiece(ItemInit.NEVA_CORE_PIECE)
+            .setType(EquipmentAttribute.EquipmentType.ARMOR);
+
     static {
         ItemInit.FOX_ARMOR.setEquipmentAttribute(FOX_ARMOR);
         ItemInit.UNREAL_RING.setEquipmentAttribute(UNREAL_RING);
@@ -111,6 +126,8 @@ public class EquipmentInit
         ItemInit.HEAVEN_ARROW.setEquipmentAttribute(HEAVEN_ARROW);
         ItemInit.EAGER.setEquipmentAttribute(EAGER);
         ItemInit.XIMO_CORE.setEquipmentAttribute(XIMO_CORE);
+        ItemInit.HEAVY_COLD.setEquipmentAttribute(HEAVY_COLD);
+        ItemInit.NEVA_CORE.setEquipmentAttribute(NEVA_CORE);
         MagicEquipmentRegistry.updateMap();
     }
 }

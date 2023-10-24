@@ -3,10 +3,7 @@ package com.xwm.magicmaid2.core.init;
 import com.xwm.magicmaid2.common.entity.EntitySoul;
 import com.xwm.magicmaid2.common.entity.maid.*;
 import com.xwm.magicmaid2.common.entity.mob.*;
-import com.xwm.magicmaid2.common.entity.throwable.EntityEvilDeathBall;
-import com.xwm.magicmaid2.common.entity.throwable.EntityEvilSwordPower;
-import com.xwm.magicmaid2.common.entity.throwable.EntityHeavenArrow;
-import com.xwm.magicmaid2.common.entity.throwable.EntityStarArrow;
+import com.xwm.magicmaid2.common.entity.throwable.*;
 import com.xwm.magicmaid2.core.util.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
@@ -30,6 +27,9 @@ public class EntityInit
         registerEntityWithoutEgg(event, Reference.MODID + "_ximo", EntityMagicMaidXimo.class, ID++, 50);
         registerEntityWithoutEgg(event, Reference.MODID + "_ximo_boss", EntityMagicMaidXimoBoss.class, ID++, 50);
 
+        registerEntity(event, Reference.MODID + "_neva", EntityMagicMaidNeva.class, ID++, 50, 0, 0);
+
+
         registerEntity(event, Reference.MODID + "_maier", EntityMagicMaidMaier.class, ID++, 50, 0x000000, 0xffffff);
         registerEntity(event, Reference.MODID + "_lost_heart", EntityLostHeart.class, ID++, 50, 0x000000, 0x4e3d25);
         registerEntity(event, Reference.MODID + "_lost_evil", EntityLostEvil.class, ID++, 50, 0x000000, 0xffffff);
@@ -44,6 +44,7 @@ public class EntityInit
         registerEntityWithoutEgg(event, Reference.MODID + "_startarrow", EntityStarArrow.class, ID++, 50);
         registerEntityWithoutEgg(event, Reference.MODID + "_heavenarrow", EntityHeavenArrow.class, ID++, 50);
         registerEntityWithoutEgg(event, Reference.MODID + "_evilswordpower", EntityEvilSwordPower.class, ID++, 50);
+        registerEntityWithoutEgg(event, Reference.MODID + "_ice", EntityIce.class, ID++, 50);
 
 //        registerEntityWithoutEgg(event, Reference.MODID + "_ring", EntityRing.class, ID++, 50);
     }

@@ -1,0 +1,219 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.neva.attack": {
+			"loop": true,
+			"animation_length": 1.04167,
+			"bones": {
+				"right_arm_bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [-210, 0, -30]
+						},
+						"0.2917": {
+							"vector": [-210, 0, -30]
+						},
+						"0.5": {
+							"vector": [-100, 0, -30]
+						}
+					}
+				},
+				"armLeft": {
+					"rotation": {
+						"0.0": {
+							"vector": [-210, 0, 30]
+						},
+						"0.2917": {
+							"vector": [-210, 0, 30]
+						},
+						"0.5": {
+							"vector": [-100, 0, 30]
+						}
+					}
+				},
+				"legRight": {
+					"rotation": {
+						"0.0": {
+							"vector": [40, 0, 0]
+						},
+						"0.2917": {
+							"vector": [40, 0, 0]
+						},
+						"0.5": {
+							"vector": [-40, 0, 0]
+						}
+					}
+				},
+				"legLeft": {
+					"rotation": {
+						"0.0": {
+							"vector": [40, 0, 0]
+						},
+						"0.2917": {
+							"vector": [40, 0, 0]
+						},
+						"0.5": {
+							"vector": [-40, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.neva.ice_explode": {
+			"animation_length": 1.16667,
+			"bones": {
+				"main": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, -30, 0]
+						},
+						"0.375": {
+							"vector": [0, -150, 0]
+						},
+						"0.5833": {
+							"vector": [0, -270, 0]
+						},
+						"0.7917": {
+							"vector": [0, -360, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [0, 3, 0]
+						},
+						"0.375": {
+							"vector": [0, 3, 0]
+						}
+					}
+				},
+				"head_bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-40, 0, 0]
+						},
+						"1.0417": {
+							"vector": [-27.5, 0, 0]
+						},
+						"1.1667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"right_arm_bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-115, 0, 0]
+						},
+						"0.7917": {
+							"vector": [-115, 0, 0]
+						},
+						"1.0417": {
+							"vector": [-115, 0, 0]
+						},
+						"1.1667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"armLeft": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-115, 0, 0]
+						},
+						"0.7917": {
+							"vector": [-115, 0, 0]
+						},
+						"1.0417": {
+							"vector": [-115, 0, 0]
+						},
+						"1.1667": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.neva.walk": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"main": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 2, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						},
+						"0.375": {
+							"vector": [0, 2, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"legRight": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [-40, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						},
+						"0.375": {
+							"vector": [40, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"legLeft": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [40, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						},
+						"0.375": {
+							"vector": [-40, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.neva.idle": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

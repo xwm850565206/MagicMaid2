@@ -292,6 +292,12 @@
     },
     {
       "type": "entity",
+      "name": "涅瓦",
+      "description": "[职业]:游侠，武器有[严寒]，护具有[怒核]\n[服侍]:周围有敌意的生物施加减速和虚弱\n[战斗]:低额的普通攻击，释放大量冰块进攻敌人，冰块破碎会施加减速和虚弱，六次充能之后会展开冰之领域造成大范围伤害并回复一定血量",
+      "resourceLocation": "magic_maid2:magic_maid2_neva"
+    },
+    {
+      "type": "entity",
       "name": "梅尔",
       "description": "[职业]:???\n[服侍]:???\n[战斗]:？？？\n目前玩家可以在[迷雾森林]维度的[梅尔小屋]找到她，她的更多故事还在制作。",
       "resourceLocation": "magic_maid2:magic_maid2_maier"

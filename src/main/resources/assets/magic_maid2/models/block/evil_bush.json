@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "magic_maid2:blocks/evil_bush"
+    }
+}

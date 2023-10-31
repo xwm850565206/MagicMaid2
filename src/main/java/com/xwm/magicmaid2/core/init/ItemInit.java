@@ -85,6 +85,10 @@ public class ItemInit
     public static ItemDesireBone DESIRE_BONE = new ItemDesireBone("desire_bone");
     public static ItemBase HOLY_CROSS = new ItemBase("holy_cross_maid2");
 
+    public static ItemBase HOLY_RHINOCEROS = new ItemBase("rhinoceros");
+
+    public static ItemBase ARROGANT = new ItemArrogant("arrogant");
+
     // symbol
     public static Item SYMBOL_WHITE = new ItemSymbol("symbol_white");
     public static Item SYMBOL_BLACK = new ItemSymbol("symbol_black");

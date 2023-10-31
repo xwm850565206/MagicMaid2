@@ -15,6 +15,8 @@ public class BlockInit
     public static Block BLOCK_EVIL_GRASS = new BlockEvilGrass("evil_grass", Material.GRASS);
     public static Block BLOCK_EVIL_DIRT = new BlockEvilDirt("evil_dirt", Material.GROUND);
 
+    public static Block BLOCK_EVIL_BUSH = new BlockEvilBush("evil_bush");
+
     public static Block BLOCK_EVIL_LOG = new BlockEvilLog("evil_log");
 
     public static Block BLOCK_EVIL_LEAVE = new BlockEvilLeaves("evil_leaves");

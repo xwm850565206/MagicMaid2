@@ -4,11 +4,7 @@ package com.xwm.magicmaid2.client.proxy;
 import com.xwm.magicmaid.gui.GuiInstructionBook;
 import com.xwm.magicmaid.gui.GuiShowMemory;
 import com.xwm.magicmaid.registry.MagicModelRegistry;
-import com.xwm.magicmaid2.client.model.javamodel.ModelMaier;
-import com.xwm.magicmaid2.client.model.javamodel.ModelXimo;
-import com.xwm.magicmaid2.client.model.javamodel.ModelAili;
-import com.xwm.magicmaid2.client.model.javamodel.ModelCarlie;
-import com.xwm.magicmaid2.client.model.javamodel.ModelCassiu;
+import com.xwm.magicmaid2.client.model.javamodel.*;
 import com.xwm.magicmaid2.client.render.RenderHandler;
 import com.xwm.magicmaid2.common.proxy.CommonProxy;
 import com.xwm.magicmaid2.core.util.Reference;
@@ -46,6 +42,7 @@ public class ClientProxy extends CommonProxy
         MagicModelRegistry.register(new ResourceLocation(Reference.MODID, Reference.MODID + "_cassiu"), new ModelCassiu(), new ResourceLocation(Reference.MODID, "textures/entities/cassiu.png"));
         MagicModelRegistry.register(new ResourceLocation(Reference.MODID, Reference.MODID + "_carlie"), new ModelCarlie(), new ResourceLocation(Reference.MODID, "textures/entities/carlie.png"));
         MagicModelRegistry.register(new ResourceLocation(Reference.MODID, Reference.MODID + "_ximo"), new ModelXimo(), new ResourceLocation(Reference.MODID, "textures/entities/ximo.png"));
+        MagicModelRegistry.register(new ResourceLocation(Reference.MODID, Reference.MODID + "_neva"), new ModelNeva(), new ResourceLocation(Reference.MODID, "textures/entities/neva.png"));
         MagicModelRegistry.register(new ResourceLocation(Reference.MODID, Reference.MODID + "_maier"), new ModelMaier(), new ResourceLocation(Reference.MODID, "textures/entities/maier.png"));
 
         GuiShowMemory.MEMORY_POEM.put(3, new ResourceLocation(Reference.MODID, "texts/memory_aili.txt"));
@@ -53,7 +50,7 @@ public class ClientProxy extends CommonProxy
         GuiShowMemory.MEMORY_POEM.put(5, new ResourceLocation(Reference.MODID, "texts/memory_cassiu.txt"));
         GuiShowMemory.MEMORY_POEM.put(6, new ResourceLocation(Reference.MODID, "texts/letter.txt"));
         GuiShowMemory.MEMORY_POEM.put(7, new ResourceLocation(Reference.MODID, "texts/memory_ximo.txt"));
-
+        GuiShowMemory.MEMORY_POEM.put(8, new ResourceLocation(Reference.MODID, "texts/memory_neva.txt"));
         RenderHandler.registerEntityRenders();
     }
 

@@ -18,12 +18,16 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
+import net.minecraft.entity.monster.EntityMob;
+import net.minecraft.init.MobEffects;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import scala.Int;
@@ -53,12 +57,10 @@ public class EntityMagicMaidNeva extends EntityMaidBase implements IAnimatable, 
     protected void entityInit() {
         super.entityInit();
         this.getDataManager().register(CHARGE, 0);
-        this.setMode(EnumMode.toInt(EnumMode.BOSS));
     }
 
     public void initEntityAI(){
         super.initEntityAI();
-        this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityLivingBase.class, false));
         this.tasks.addTask(3, new EntityAIIceAttack(this, 1, 80, 5));
     }
 
@@ -111,6 +113,21 @@ public class EntityMagicMaidNeva extends EntityMaidBase implements IAnimatable, 
     public void onLivingUpdate()
     {
         super.onLivingUpdate();
+
+        if (this.getOwnerID() != null && EnumMode.valueOf(this.getMode()) == EnumMode.SERVE)
+        {
+            AxisAlignedBB bb = this.getEntityBoundingBox().grow(4+4*this.getRank());
+            List<EntityLiving> mobs = this.world.getEntitiesWithinAABB(EntityLiving.class, bb);
+            for (EntityLiving mob : mobs)
+            {
+                if (mob.getAttackTarget() != null && (mob.getAttackTarget().getUniqueID().equals(this.getOwnerID()) ||
+                        mob.getAttackTarget().getUniqueID().equals(this.getUniqueID()))) // 要主人或者自己都会被施加buff
+                {
+                    mob.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, getRank()+2));
+                    mob.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 100, getRank()+2));
+                }
+            }
+        }
     }
 
     @Override
@@ -169,7 +186,7 @@ public class EntityMagicMaidNeva extends EntityMaidBase implements IAnimatable, 
     protected ResourceLocation getLootTable()
     {
         if (getTrueHealth() > 0) return null;
-        return LootTableInit.HOLY_FRUIT_AILI;
+        return LootTableInit.HOLY_FRUIT_NEVA;
     }
 
 }

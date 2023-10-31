@@ -35,7 +35,7 @@ public class ItemMemoryNeva extends ItemBase
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         if (handIn == EnumHand.MAIN_HAND){
-            playerIn.openGui(Main.instance, Reference.GUI_MAID_MEMORY, worldIn, 7, 0,0 );
+            playerIn.openGui(Main.instance, Reference.GUI_MAID_MEMORY, worldIn, 8, 0,0 );
             return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
         }
         else

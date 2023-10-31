@@ -10,10 +10,7 @@ import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.GenLayerVoronoiZoom;
 import net.minecraft.world.gen.layer.GenLayerZoom;
 import net.minecraft.world.gen.layer.IntCache;
-import net.minecraft.world.storage.WorldInfo;
 
-import javax.annotation.Nullable;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
@@ -23,10 +20,11 @@ public class NormalLandBiomeProvider extends BiomeProvider
 
     public NormalLandBiomeProvider(World world) {
         super(world.getWorldInfo());
-        allowedBiomes = Lists.newArrayList(BiomeInit.NORMAL_LAND_PLAIN, BiomeInit.NORMAL_LAND_HILLS);
+        allowedBiomes = Lists.newArrayList(BiomeInit.NORMAL_LAND_PLAIN, BiomeInit.NORMAL_LAND_HILLS, BiomeInit.NORMAL_LAND_BUSH);
         getBiomesToSpawnIn().clear();
         getBiomesToSpawnIn().add(BiomeInit.NORMAL_LAND_PLAIN);
         getBiomesToSpawnIn().add(BiomeInit.NORMAL_LAND_HILLS);
+        getBiomesToSpawnIn().add(BiomeInit.NORMAL_LAND_BUSH);
 
         makeLayers(world.getSeed());
     }
@@ -65,7 +63,8 @@ public class NormalLandBiomeProvider extends BiomeProvider
 
         protected static final List<Supplier<Biome>> commonBiomes = Arrays.asList(
                 () -> BiomeInit.NORMAL_LAND_PLAIN,
-                () -> BiomeInit.NORMAL_LAND_HILLS
+                () -> BiomeInit.NORMAL_LAND_HILLS,
+                () -> BiomeInit.NORMAL_LAND_BUSH
         );
 
 

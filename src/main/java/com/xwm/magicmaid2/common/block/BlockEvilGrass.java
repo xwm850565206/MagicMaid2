@@ -39,6 +39,7 @@ public class BlockEvilGrass extends BlockBase implements IGrowable
     public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction, IPlantable plantable) {
         Set<Block> WHITE_BLOCK = new HashSet<Block>(){{
             this.add(BlockInit.BLOCK_EVIL_TALL_GRASS);
+            this.add(BlockInit.BLOCK_EVIL_BUSH);
         }};
 
         IBlockState plantState = plantable.getPlant(world, pos);

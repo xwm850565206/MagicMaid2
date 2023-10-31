@@ -1,5 +1,6 @@
 package com.xwm.magicmaid2.common.entity.mob;
 
+import com.xwm.magicmaid2.core.init.LootTableInit;
 import com.xwm.magicmaid2.core.network.NetworkLoader;
 import com.xwm.magicmaid2.core.network.packet.server.SPacketParticle6;
 import net.minecraft.entity.EntityLivingBase;
@@ -17,6 +18,7 @@ import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -214,6 +216,10 @@ public class EntityEvilSkeleton extends EntityMob implements IAnimatable
         }
     }
 
-
+    @Override
+    protected ResourceLocation getLootTable()
+    {
+        return LootTableInit.EVIL_SKELETON;
+    }
 
 }

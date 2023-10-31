@@ -2,6 +2,7 @@ package com.xwm.magicmaid2.common.entity.mob;
 
 import com.xwm.magicmaid2.common.entity.throwable.EntityEvilSwordPower;
 import com.xwm.magicmaid2.common.entity.throwable.EntityIce;
+import com.xwm.magicmaid2.core.init.LootTableInit;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
@@ -19,6 +20,7 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -225,6 +227,10 @@ public class EntityEvilSkeletonMaster extends EntityMob implements IAnimatable
         }
     }
 
-
+    @Override
+    protected ResourceLocation getLootTable()
+    {
+        return LootTableInit.EVIL_SKELETON_MASTER;
+    }
 
 }
